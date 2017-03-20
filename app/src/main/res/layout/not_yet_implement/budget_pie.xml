@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:baselineAligned="false"
+    android:orientation="horizontal" android:weightSum="1">
+
+    <LinearLayout android:id="@+id/leftSpace" android:layout_width="29dp"
+        android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout android:id="@+id/midContainer" android:layout_width="259dp"
+        android:layout_height="match_parent" android:layout_weight="1.01"
+        android:orientation="vertical" android:weightSum="1">
+
+        <LinearLayout android:id="@+id/pie_chart" android:layout_width="match_parent"
+            android:layout_height="234dp" android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/space" android:layout_width="match_parent"
+            android:layout_height="133dp" android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout android:id="@+id/buttons" android:layout_width="wrap_content"
+            android:layout_height="match_parent" android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/weekly" android:layout_width="85dp"
+                android:layout_height="wrap_content" android:text="weekly"
+                android:textSize="12sp" />
+
+            <Button android:id="@+id/mo" android:layout_width="85dp"
+                android:layout_height="wrap_content" android:text="monthly"
+                android:textSize="12sp" />
+
+            <Button android:id="@+id/button" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="semester"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/rightSpace" android:layout_width="29dp"
+        android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+</LinearLayout>

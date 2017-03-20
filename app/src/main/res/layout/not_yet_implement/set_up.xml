@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <FrameLayout android:id="@+id/inputName" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="55dp">
+
+        <LinearLayout android:id="@+id/container1" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView android:id="@+id/nameText" android:layout_width="match_parent"
+                android:layout_height="43dp" android:text="Name" android:textSize="24sp" />
+
+            <EditText android:id="@+id/inputName" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background" android:ems="10"
+                android:inputType="text" android:text="Name"
+                android:textColor="?attr/colorBackgroundFloating" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout android:id="@+id/buttonContainer" android:layout_width="match_parent"
+        android:layout_height="344dp" android:orientation="vertical">
+
+        <LinearLayout android:id="@+id/container2" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout android:id="@+id/lSpace" android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout android:id="@+id/mSpace" android:layout_width="166dp"
+                android:layout_height="match_parent" android:layout_weight="1.00"
+                android:orientation="vertical" android:weightSum="1">
+
+                <TextView android:id="@+id/setupText" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:text="Set-up type"
+                    android:textAlignment="center" android:textSize="24sp" />
+
+                <Button android:id="@+id/expressButton" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="0.10"
+                    android:text="Express" />
+
+                <Button android:id="@+id/standardButton" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="0.10"
+                    android:text="Standard" />
+
+                <Button android:id="@+id/advancedButton" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="0.10"
+                    android:text="Advanced" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/rSpace" android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

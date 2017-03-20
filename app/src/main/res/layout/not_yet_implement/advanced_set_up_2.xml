@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/container" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="horizontal" android:weightSum="1">
+
+        <LinearLayout android:id="@+id/leftSpace" android:layout_width="24dp"
+            android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout android:id="@+id/listContainer" android:layout_width="189dp"
+            android:layout_height="match_parent" android:layout_weight="1.04"
+            android:orientation="vertical" android:weightSum="1">
+
+            <TextView android:id="@+id/income" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                android:text="Income" android:textAlignment="center" />
+
+            <LinearLayout android:id="@+id/itemLoan" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout android:id="@+id/loanSpace" android:layout_width="136dp"
+                    android:layout_height="match_parent" android:layout_weight="0.92"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/loan" android:layout_width="158dp"
+                        android:layout_height="wrap_content" android:text="Maintenance Loan" />
+
+                    <EditText android:id="@+id/loanInput" android:layout_width="157dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background" android:ems="10"
+                        android:hint="￡" android:inputType="number" android:text="￡"
+                        android:textColor="?attr/colorBackgroundFloating" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/loanDay" android:layout_width="wrap_content"
+                    android:layout_height="51dp" android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView android:id="@+id/dd" android:layout_width="96dp"
+                        android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                        android:text="Day you get paid" android:textAlignment="textEnd"
+                        android:textSize="10sp" />
+
+                    <EditText android:id="@+id/inputLoanDay" android:layout_width="46dp"
+                        android:layout_height="wrap_content" android:layout_marginLeft="50dp"
+                        android:background="@android:drawable/editbox_background" android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/colorBackgroundFloating" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/itemFamily" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout android:id="@+id/spaceFamily" android:layout_width="136dp"
+                    android:layout_height="match_parent" android:layout_weight="0.93"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/family" android:layout_width="158dp"
+                        android:layout_height="wrap_content" android:text="Family" />
+
+                    <EditText android:id="@+id/familyInput" android:layout_width="157dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background" android:ems="10"
+                        android:hint="￡" android:inputType="number" android:text="￡"
+                        android:textColor="?attr/colorBackgroundFloating" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/familyDay" android:layout_width="wrap_content"
+                    android:layout_height="51dp" android:layout_weight="0.08"
+                    android:orientation="vertical" android:weightSum="1">
+
+                    <LinearLayout android:id="@+id/familyTopSpace"
+                        android:layout_width="match_parent" android:layout_height="18dp"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <EditText android:id="@+id/inputFamilyDay" android:layout_width="46dp"
+                        android:layout_height="wrap_content" android:layout_marginLeft="50dp"
+                        android:background="@android:drawable/editbox_background" android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/colorBackgroundFloating" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/itemPtj" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout android:id="@+id/spacePtj" android:layout_width="136dp"
+                    android:layout_height="match_parent" android:layout_weight="0.93"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/ptj" android:layout_width="158dp"
+                        android:layout_height="wrap_content" android:text="Part Time Job" />
+
+                    <EditText android:id="@+id/ptjInput" android:layout_width="157dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background" android:ems="10"
+                        android:hint="￡" android:inputType="number" android:text="￡"
+                        android:textColor="?attr/colorBackgroundFloating" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/ptjDay" android:layout_width="wrap_content"
+                    android:layout_height="51dp" android:layout_weight="0.08"
+                    android:orientation="vertical" android:weightSum="1">
+
+                    <LinearLayout android:id="@+id/ptjTopSpace" android:layout_width="match_parent"
+                        android:layout_height="18dp" android:orientation="vertical"></LinearLayout>
+
+                    <EditText android:id="@+id/inputPtjDay" android:layout_width="46dp"
+                        android:layout_height="wrap_content" android:layout_marginLeft="50dp"
+                        android:background="@android:drawable/editbox_background" android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/colorBackgroundFloating" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/itemOther" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout android:id="@+id/spaceOther" android:layout_width="136dp"
+                    android:layout_height="match_parent" android:layout_weight="0.93"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/other" android:layout_width="158dp"
+                        android:layout_height="wrap_content" android:text="Other" />
+
+                    <EditText android:id="@+id/otherInput" android:layout_width="157dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background" android:ems="10"
+                        android:hint="￡" android:inputType="number" android:text="￡"
+                        android:textColor="?attr/colorBackgroundFloating" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/otherDay" android:layout_width="wrap_content"
+                    android:layout_height="51dp" android:layout_weight="0.08"
+                    android:orientation="vertical" android:weightSum="1">
+
+                    <LinearLayout android:id="@+id/otherTopSpace"
+                        android:layout_width="match_parent" android:layout_height="18dp"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <EditText android:id="@+id/inputOtherDay" android:layout_width="46dp"
+                        android:layout_height="wrap_content" android:layout_marginLeft="50dp"
+                        android:background="@android:drawable/editbox_background" android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/colorBackgroundFloating" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/buttonContainer" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout android:id="@+id/firstRow" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button android:id="@+id/addRow" android:layout_width="wrap_content"
+                        android:layout_height="match_parent" android:layout_weight="0.87"
+                        android:text="Add Row" />
+
+                    <LinearLayout android:id="@+id/buttonSpace1" android:layout_width="128dp"
+                        android:layout_height="match_parent" android:layout_weight="0.11"
+                        android:orientation="horizontal"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/overdraftContainer"
+                    android:layout_width="match_parent" android:layout_height="127dp"
+                    android:orientation="vertical" android:weightSum="1">
+
+                    <TextView android:id="@+id/overdraft" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:text="Overdraft"
+                        android:textAlignment="center" android:textSize="16sp" />
+
+                    <LinearLayout android:id="@+id/radioButtonRow"
+                        android:layout_width="match_parent" android:layout_height="37dp"
+                        android:layout_weight="0.89" android:orientation="vertical">
+
+                        <LinearLayout android:id="@+id/radioButton"
+                            android:layout_width="match_parent" android:layout_height="match_parent"
+                            android:orientation="horizontal" android:weightSum="1">
+
+                            <RadioButton android:id="@+id/radioButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:layout_marginTop="2dp"
+                                android:layout_weight="1.24" android:text="I have an overdraft" />
+
+                            <RadioButton android:id="@+id/radioButton2" android:layout_width="146dp"
+                                android:layout_height="wrap_content" android:layout_marginTop="2dp"
+                                android:text="I don't have an overraft" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/amountInput" android:layout_width="match_parent"
+                        android:layout_height="57dp" android:orientation="vertical">
+
+                        <TextView android:id="@+id/amount" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:layout_marginLeft="8dp"
+                            android:layout_weight="0.72" android:text="Amount"
+                            android:textSize="16sp" />
+
+                        <EditText android:id="@+id/overDraftInput"
+                            style="@style/Widget.AppCompat.EditText" android:layout_width="251dp"
+                            android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:ems="10" android:hint="￡" android:inputType="number"
+                            android:text="￡" android:textColor="?attr/colorBackgroundFloating" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/secondRow" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+
+                    <LinearLayout android:id="@+id/buttonSpace2" android:layout_width="132dp"
+                        android:layout_height="match_parent" android:layout_weight="0.09"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <Button android:id="@+id/continueButton" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="Continue" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/rightSpace" android:layout_width="26dp"
+            android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

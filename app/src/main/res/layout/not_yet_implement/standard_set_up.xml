@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/topSpace" android:layout_width="match_parent"
+        android:layout_height="27dp" android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout android:id="@+id/space" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="horizontal" android:weightSum="1">
+
+        <LinearLayout android:id="@+id/lSpace" android:layout_width="22dp"
+            android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout android:id="@+id/inputContainer" android:layout_width="235dp"
+            android:layout_height="match_parent" android:layout_weight="1.09"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/rent" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Rent" android:textSize="15sp" />
+
+            <EditText android:id="@+id/editRent" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background" android:ems="10"
+                android:hint="￡" android:inputType="number" android:text="￡"
+                android:textColor="?attr/colorBackgroundFloating" />
+
+            <TextView android:id="@+id/food" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Food and Utilities" android:textSize="15sp" />
+
+            <EditText android:id="@+id/editFood" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background" android:ems="10"
+                android:hint="￡" android:inputType="number" android:text="￡"
+                android:textColor="?attr/colorBackgroundFloating" />
+
+            <TextView android:id="@+id/social" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Social" android:textSize="15sp" />
+
+            <EditText android:id="@+id/editSocial" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background" android:ems="10"
+                android:hint="￡" android:inputType="number" android:text="￡"
+                android:textColor="?attr/colorBackgroundFloating" />
+
+            <TextView android:id="@+id/other" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Other" android:textSize="15sp" />
+
+            <EditText android:id="@+id/editOther" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background" android:ems="10"
+                android:hint="￡" android:inputType="number" android:text="￡"
+                android:textColor="?attr/colorBackgroundFloating" />
+
+            <TextView android:id="@+id/loan" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="20dp"
+                android:text="Maintenance Loan" android:textSize="15sp" />
+
+            <EditText android:id="@+id/editLoan" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background" android:ems="10"
+                android:hint="￡" android:inputType="number" android:text="￡"
+                android:textColor="?attr/colorBackgroundFloating" />
+
+            <TextView android:id="@+id/family" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Family/ Part Time Work" android:textSize="15sp" />
+
+            <EditText android:id="@+id/editFamily" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background" android:ems="10"
+                android:hint="￡" android:inputType="number" android:text="￡"
+                android:textColor="?attr/colorBackgroundFloating" />
+
+            <LinearLayout android:id="@+id/buttonContainer" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="horizontal">
+
+                <LinearLayout android:id="@+id/space" android:layout_width="132dp"
+                    android:layout_height="match_parent" android:layout_weight="0.32"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <Button android:id="@+id/continue" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="Continue" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/rSpace" android:layout_width="24dp"
+            android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+</LinearLayout>

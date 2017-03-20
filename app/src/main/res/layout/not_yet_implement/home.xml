@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:weightSum="1">
+
+
+    <LinearLayout android:id="@+id/pieChartContainer" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_weight="0.77"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/quickLinkContainer" android:layout_width="match_parent"
+        android:layout_height="84dp" android:orientation="vertical">
+
+        <LinearLayout android:id="@+id/quickLinkContainer1" android:layout_width="match_parent"
+            android:layout_height="42dp" android:orientation="horizontal">
+
+            <LinearLayout android:id="@+id/lSpace1" android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="0.88"
+                android:orientation="horizontal"></LinearLayout>
+
+            <TextView android:id="@+id/quickLink1" android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="3.67"
+                android:text="Quick link 1"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <LinearLayout android:id="@+id/rSpace1" android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="0.88"
+                android:orientation="horizontal"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/quickLinkContainer2" android:layout_width="match_parent"
+            android:layout_height="37dp" android:orientation="horizontal" android:weightSum="1">
+
+            <LinearLayout android:id="@+id/lSpace2" android:layout_width="49dp"
+                android:layout_height="match_parent" android:layout_weight="0.18"
+                android:orientation="horizontal"></LinearLayout>
+
+            <TextView android:id="@+id/quickLink2" android:layout_width="214dp"
+                android:layout_height="match_parent" android:layout_weight="0.56"
+                android:text="Quick link 2"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <LinearLayout android:id="@+id/rSpace2" android:layout_width="41dp"
+                android:layout_height="match_parent" android:layout_weight="0.06"
+                android:orientation="horizontal"></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/buttonContainer" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="1">
+
+        <LinearLayout android:id="@+id/lSpace3" android:layout_width="25dp"
+            android:layout_height="match_parent" android:layout_weight="0.06"
+            android:orientation="horizontal"></LinearLayout>
+
+        <Button android:id="@+id/qAdd" android:layout_width="130dp"
+            android:layout_height="wrap_content" android:text="Quick Add" />
+
+        <LinearLayout android:id="@+id/mSpace3" android:layout_width="20dp"
+            android:layout_height="match_parent" android:layout_weight="0.86"
+            android:orientation="horizontal"></LinearLayout>
+
+        <Button android:id="@+id/qRemove" android:layout_width="130dp"
+            android:layout_height="wrap_content" android:text="Quick Remove" />
+
+        <LinearLayout android:id="@+id/rSpace3" android:layout_width="25dp"
+            android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/input" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical">
+
+        <LinearLayout android:id="@+id/inputContainer" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout android:id="@+id/lSpace4" android:layout_width="25dp"
+                android:layout_height="match_parent" android:layout_weight="0.29"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout android:layout_width="278dp" android:layout_height="match_parent"
+                android:layout_weight="0.36" android:orientation="vertical">
+
+                <EditText android:id="@+id/editText" style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="270dp" android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background" android:ems="10"
+                    android:hint="Amount: ￡" android:inputType="number" android:text="Amount: ￡"
+                    android:textColor="?attr/colorBackgroundFloating" />
+
+                <Spinner android:id="@+id/spinner" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@android:color/background_light" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
